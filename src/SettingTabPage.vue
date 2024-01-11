@@ -3,6 +3,10 @@
         <button @click="add_one">+1</button>
         <span class="sample-class">{{ count }}</span>
     </div>
+    <br />
+    <div>
+        <n-button @click="add_one">naive-ui</n-button>
+    </div>
 </template>
 
 <style scoped>
@@ -14,6 +18,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { NButton } from "naive-ui";
 
 export default defineComponent({
     name: "SampleSettingTabPage",
@@ -26,6 +31,9 @@ export default defineComponent({
         add_one() {
             this.count += 1;
         }
+    },
+    components: {
+        NButton
     }
 })
 </script>
