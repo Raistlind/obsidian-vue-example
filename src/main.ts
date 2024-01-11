@@ -25,6 +25,7 @@ export default class SamplePlugin extends Plugin {
      * 
      * 这将是您设置插件大部分功能的地方.
      */
+
     onload() {
         /**
          * Register the plugin setting-tab.
