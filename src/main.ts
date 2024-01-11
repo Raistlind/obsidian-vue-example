@@ -44,5 +44,6 @@ export default class SamplePlugin extends Plugin {
      * 插件所调用的所有资源必须在这里得到释放, 以防止插件被禁用后对 Obsidian 的性能产生影响.
      */
     onunload() {
+
     }
 }
